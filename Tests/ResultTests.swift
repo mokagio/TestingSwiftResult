@@ -2,7 +2,7 @@ import XCTest
 
 class ResultTests: XCTestCase {
 
-    func testResultSuccess() {
+    func testResultSuccess() throws {
         let result = makeResult(42)
 
         // Option 1
@@ -18,6 +18,10 @@ class ResultTests: XCTestCase {
             return XCTFail("Expected to be a .success but got a .failure with \(result)")
         }
         XCTAssertEqual(value, 42)
+
+        // Option 3
+        let value_ = try result.get()
+        XCTAssertEqual(value_, 42)
 
         // Option 3
         assert(result, isSuccessWith: 42)
