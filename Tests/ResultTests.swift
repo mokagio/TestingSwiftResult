@@ -23,7 +23,7 @@ class ResultTests: XCTestCase {
         assert(result, isSuccessWith: 42)
     }
 
-    func testResultFailur() {
+    func testResultFailure() {
         let error = TestError()
         let result = makeResult(error)
 
