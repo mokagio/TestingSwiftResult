@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3F27ACEF2572FE00005CE538 /* EquatableResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F27ACEE2572FE00005CE538 /* EquatableResultTests.swift */; };
+		3F27ACF22572FFC3005CE538 /* XCTestCase+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F27ACF12572FFC3005CE538 /* XCTestCase+Result.swift */; };
 		3FDA0396256BC1EC00F580E7 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA0395256BC1EC00F580E7 /* ResultTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F27ACEE2572FE00005CE538 /* EquatableResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableResultTests.swift; sourceTree = "<group>"; };
+		3F27ACF12572FFC3005CE538 /* XCTestCase+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Result.swift"; sourceTree = "<group>"; };
 		3FDA0392256BC1EC00F580E7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDA0395256BC1EC00F580E7 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
 		3FDA0397256BC1EC00F580E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,9 +50,10 @@
 		3FDA0394256BC1EC00F580E7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3FDA0395256BC1EC00F580E7 /* ResultTests.swift */,
 				3F27ACEE2572FE00005CE538 /* EquatableResultTests.swift */,
 				3FDA0397256BC1EC00F580E7 /* Info.plist */,
+				3FDA0395256BC1EC00F580E7 /* ResultTests.swift */,
+				3F27ACF12572FFC3005CE538 /* XCTestCase+Result.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			files = (
 				3FDA0396256BC1EC00F580E7 /* ResultTests.swift in Sources */,
 				3F27ACEF2572FE00005CE538 /* EquatableResultTests.swift in Sources */,
+				3F27ACF22572FFC3005CE538 /* XCTestCase+Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
