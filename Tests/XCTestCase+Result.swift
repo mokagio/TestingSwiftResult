@@ -2,10 +2,10 @@ import XCTest
 
 extension XCTestCase {
 
-    func assert<T>(
-        _ result: Result<T, Error>,
+    func assert<T, E>(
+        _ result: Result<T, E>,
         isSuccessWith value: T
-    ) where T: Equatable {
+    ) where E: Error, T: Equatable {
         switch result {
         case .success(let resultValue):
             XCTAssertEqual(resultValue, value)
