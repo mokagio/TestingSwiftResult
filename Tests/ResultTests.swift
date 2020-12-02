@@ -38,6 +38,9 @@ class ResultTests: XCTestCase {
 
         assert(result, isSuccessWith: 42)
         assert(result, isSuccessWith: 42, message: { "Failed with '\($0.message)'" })
+
+        assertIsSuccess(result)
+        assertIsSuccess(result) { XCTAssertEqual($0, 42) }
     }
 
     func testResultFailureGuard() {
@@ -68,6 +71,9 @@ class ResultTests: XCTestCase {
 
         assert(result, isFailureWith: TestError(message: "abc"))
         assert(result, isFailureWith: TestError(message: "abc"), message: { "Succeeded with '\($0)'" })
+
+        assertIsFailure(result)
+        assertIsFailure(result) { XCTAssertEqual($0.message, "abc") }
     }
 }
 
